@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ezgi!</title>
+    <style>
+        /* Общие настройки страницы и фона */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Твоя прямая ссылка на фотохостинг */
+            background-image: url('https://i.ibb.co/B2GKjmfB/IMG-9074.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        /* Праздничный контейнер для текста */
+        .birthday-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 24px;
+            max-width: 650px;
+            margin: 20px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+            border: 3px solid #ffccd5;
+            text-align: center;
+            animation: cardEntrance 1.2s ease-out forwards;
+        }
+
+        /* Текст поздравления */
+        .wishes-text {
+            font-size: 1.45rem;
+            line-height: 1.8;
+            font-weight: 600;
+            color: #333;
+            margin: 0;
+            /* Радостный градиент для текста */
+            background: linear-gradient(45deg, #ff4081, #ff6b6b, #4dabf7, #ff4081);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 6s ease infinite, joyfulBounce 3s ease-in-out infinite;
+        }
+
+        /* Эффектное выделение для имени */
+        .highlight-name {
+            font-size: 2.2rem;
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 850;
+            letter-spacing: 1px;
+        }
+
+        /* Анимация плавного появления карточки */
+        @keyframes cardEntrance {
+            0% {
+                opacity: 0;
+                transform: scale(0.9) translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Радостное переливание цветов градиента */
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Мягкое праздничное покачивание текста */
+        @keyframes joyfulBounce {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-6px) rotate(0.5deg);
+            }
+        }
+
+        /* Адаптивность для мобильных экранов */
+        @media (max-width: 480px) {
+            .birthday-card {
+                padding: 25px;
+            }
+            .wishes-text {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+            .highlight-name {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="birthday-card">
+        <p class="wishes-text">
+            <span class="highlight-name">Ezgi, luv,</span> 
+            I wish you to be the happiest woman in the whole world on your special day! I am honored to know such a rare soul-full of genuine joy and compassion, beautifully balanced with being the nicest toxic bitch ever. The way you fight through life's challenges without even compromising your standards and your care about humanity, the planet and your closest ones makes you a complete role model to all of us.
+        </p>
+    </div>
+
+</body>
+</html>
